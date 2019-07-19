@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CalculateBill</title>
+    <style>
+        output {
+            background-color:coral;
+        }
+        fieldset{
+            border-radius: 15px;
+            width: 555px;
+        }
+        input{
+            background-color: aqua;
+        }
+    </style>
+    <script type="text/javascript" src="01.CalculateBill.js">
+    </script>
+
+</head>
+<body>
+    <fieldset>
+        <form onclick="calculate()">
+            <label for="notaPlata">Cat este totalul notei de plata? ($)</label>
+            <input type="text" name="notaPlata" id="notaPlata"></br>
+            <label for="procentTips">Cat este procentul de tips? (%)</label>
+            <input type="range" name="procentTips" id="procentTips" min="5" max="20" step= "1" onchange="rangevalue.value=value">
+            <output id="rangevalue">5</output></br>
+            <label for="tipsRotunjit">Tips: ($)</label>
+            <input type="text" name="tipsRounjit" id="tipsRotunjit" readonly></br>
+            <label for="Total">Total: ($)</label>
+            <input type="text" name="total" id="total" readonly></br>
+        </form>
+    </fieldset>  
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Retirement Calculator</title>
+    <script type="text/javascript" src="07.RetirementCalc.js"></script>
+</head>
+<body>
+    <form name="myForm" id="form">
+        Care este varsta ta curenta? </br>
+        <input type="text" id="varsta" required placeholder="introdu varsta actuala" onchange="retirement()"></br>
+        La ce varsta ti-ar placea sa te pensionezi?</br>
+        <input type="text" id='pensionare' required placeholder="introdu varsta de pensionare"></br>
+        <input type='button' value="Retirement" id='retire' onclick="retirement()"></br>
+        <input type='reset' value="Refresh" id='refresh' onclick="refresh()">
+    </form>
+    <p id="output"></p>
+</body>
+</html>
