@@ -7,6 +7,7 @@
     var ariaMetri = ariaFeet* metri;
     if(isNaN(lenParse) ||isNaN (widParse) || lenParse <0 ||widParse <0){
        window.alert('Intorduceti DOAR valori numerice si pozitive');
+       window.location.reload();
     } else {
         document.write('Ai introdus dimensiunile: ', lenParse, ' feet si ',  widParse ,  ' feet.'+ '</br>' + 'Aria este de ' ,  ariaFeet , ' square feet ' + '</br>' , ariaMetri.toFixed(3) + ' de metri patrati.');
     }
