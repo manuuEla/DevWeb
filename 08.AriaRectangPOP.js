@@ -6,9 +6,7 @@
     var ariaFeet = lenParse*widParse;
     var ariaMetri = ariaFeet* metri;
     if(isNaN(lenParse) ||isNaN (widParse) || lenParse <0 ||widParse <0){
-        console.log('Intorduceti DOAR valori numerice si pozitive');
-        document.write('Intorduceti DOAR valori numerice si pozitive');
+       window.alert('Intorduceti DOAR valori numerice si pozitive');
     } else {
-        console.log('Ai introdus dimensiunile: ' + lenParse+ ' feet si '+ widParse + ' feet.'+ '</br>' + 'Aria este de ' + ariaFeet +  ' square feet ' + '</br>' + ariaMetri.toFixed(3) + ' de metri patrati.' );
         document.write('Ai introdus dimensiunile: ', lenParse, ' feet si ',  widParse ,  ' feet.'+ '</br>' + 'Aria este de ' ,  ariaFeet , ' square feet ' + '</br>' , ariaMetri.toFixed(3) + ' de metri patrati.');
     }
